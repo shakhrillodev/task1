@@ -76,7 +76,15 @@ const calcDiffPercent = (prev: number, curr: number) => {
 };
 
 let prevData = { ...analyticsData.value };
-const cards = computed(() => {
+
+interface CardData {
+  label: string;
+  icon: any;
+  data: number;
+  diff: number;
+}
+
+const cards = computed<CardData[]>(() => {
   const data = [
     {
       label: "Total Users",
@@ -220,12 +228,18 @@ onUnmounted(() => {
         <template v-if="loading">
           <div class="flex justify-between items-center">
             <div class="flex gap-2 items-center text-blue-800 text-xl">
-              <div class="w-[120px] h-[20px] animate-pulse bg-gray-400 rounded"></div>
+              <div
+                class="w-[120px] h-[20px] animate-pulse bg-gray-400 rounded"
+              ></div>
             </div>
-            <div class="w-[20px] h-[20px] animate-pulse bg-gray-400 rounded"></div>
+            <div
+              class="w-[20px] h-[20px] animate-pulse bg-gray-400 rounded"
+            ></div>
           </div>
-          <div class="w-[20px] h-[20px] animate-pulse bg-gray-400 rounded mt-7"></div>
-        </template> 
+          <div
+            class="w-[20px] h-[20px] animate-pulse bg-gray-400 rounded mt-7"
+          ></div>
+        </template>
         <template v-else>
           <div class="flex justify-between items-center">
             <div class="flex gap-2 items-center text-blue-800 text-xl">

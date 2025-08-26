@@ -19,7 +19,7 @@ const routes = [
 
 <template>
   <div class="min-h-screen bg-gray-50 flex gap-2">
-    <div class="shrink-0 basis-[300px] flex flex-col">
+    <div class="shrink-0 basis-[300px] flex-col hidden md:flex">
       <router-link 
         class="w-full p-2 bg-gray-400 text-white font-semibold"
       v-for="route in routes"
