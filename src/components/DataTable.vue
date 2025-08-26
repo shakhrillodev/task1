@@ -6,7 +6,7 @@ import {
   type ColumnDef,
 } from '@tanstack/vue-table'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/utils.ts'
 import Table from './ui/Table.vue'
 import TableBody from './ui/TableBody.vue'
 import TableCell from './ui/TableCell.vue'
@@ -34,6 +34,7 @@ const table = useVueTable({
     return props.columns
   },
   getCoreRowModel: getCoreRowModel(),
+
 })
 </script>
 
@@ -73,5 +74,6 @@ const table = useVueTable({
         </TableRow>
       </TableBody>
     </Table>
+    
   </div>
 </template>

@@ -42,15 +42,15 @@ interface Product {
    - Stock quantity warnings (red text if quantity < 10)
 
 5. **Acceptance Criteria**:
-   - [ ] Table displays all product data correctly
-   - [ ] Add/Edit forms work properly with validation
-   - [ ] Delete confirmation dialog functions correctly
-   - [ ] Price is formatted as currency (e.g., $29.99)
-   - [ ] Stock warnings display appropriately
-   - [ ] Status badges have correct styling
-   - [ ] Code follows the same patterns as UserManagement
-   - [ ] TypeScript types are properly defined
-   - [ ] Component is responsive and accessible
+   - [* ] Table displays all product data correctly
+   - [ *] Add/Edit forms work properly with validation
+   - [ *] Delete confirmation dialog functions correctly
+   - [ *] Price is formatted as currency (e.g., $29.99)
+   - [ *] Stock warnings display appropriately
+   - [ *] Status badges have correct styling
+   - [ *] Code follows the same patterns as UserManagement
+   - [ *] TypeScript types are properly defined
+   - [ *] Component is responsive and accessible
 
 ### Task 2: Implement a New Feature (Dashboard Analytics)
 
